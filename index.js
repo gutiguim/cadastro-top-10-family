@@ -183,7 +183,7 @@ function sendData() {
         apiObject2["CorporateId"] = CorporateId;
         apiObject2["StatusBeneficiario"] = StatusBeneficiario;
         apiObject2["IdentificacaoCliente"] = IdentificacaoCliente;
-        apiObject2["Produtos"] = Produtos;
+        apiObject2["Produtos"] = "19";
         apiObject2["CodigoContrato"] = CodigoContrato;
 
         Nome = document.forms["my-form"]["nome_dependente"].value;
