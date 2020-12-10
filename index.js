@@ -73,7 +73,7 @@ function sendData() {
     var CorporateId = "39";
     var StatusBeneficiario = "A";
     var IdentificacaoCliente = "205";
-    var CodigoContrato = document.forms["my-form"]["plan"].value;
+    var CodigoContrato = "171";
 
     var apiObject = {};
     apiObject["CorporateId"] = CorporateId;
@@ -94,12 +94,6 @@ function sendData() {
     cpfTitularParaVerificacaoCPF = IdentificacaoPessoa;
     if (!cpfCorreto) {
         alert("CPF titular inválido");
-        cadastrarButton.innerHTML = "Cadastrar"
-        return false;
-    }
-    
-    if (CodigoContrato == "") {
-        alert("Escolha um plano");
         cadastrarButton.innerHTML = "Cadastrar"
         return false;
     }
