@@ -88,7 +88,8 @@ function sendData() {
     var TelefoneCelular = document.forms["my-form"]["phone_titular"].value;
     var Sexo = document.forms["my-form"]["sex_titular"].value;
     var IdentificacaoPessoa = document.forms["my-form"]["cpfcnpj"].value;
-    var Produtos = document.forms["my-form"]["product"].value;
+    // var Produtos = document.forms["my-form"]["product"].value;
+    var Produtos = "19";
     
     var cpfCorreto = checkCPF(IdentificacaoPessoa);
     cpfTitularParaVerificacaoCPF = IdentificacaoPessoa;
@@ -183,7 +184,7 @@ function sendData() {
         apiObject2["CorporateId"] = CorporateId;
         apiObject2["StatusBeneficiario"] = StatusBeneficiario;
         apiObject2["IdentificacaoCliente"] = IdentificacaoCliente;
-        apiObject2["Produtos"] = "19";
+        apiObject2["Produtos"] = Produtos;
         apiObject2["CodigoContrato"] = CodigoContrato;
 
         Nome = document.forms["my-form"]["nome_dependente"].value;
