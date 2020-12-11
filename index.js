@@ -142,7 +142,6 @@ function sendData() {
         } else { // show the result
             resultadoApiCalls = resultadoApiCalls + "Titular: Cadastrado \n";
             numeroApiCalls = numeroApiCalls -1;
-            terminouXHRTitular = true;
 
             storageRef.child('TopFamilyAtivos/' + Nome + '_' + DataNascimento + "_TITULAR").putString(jsonString, firebase.storage.StringFormat.RAW).then(function(snapshot) {
                 console.log('Uploaded string');
@@ -163,6 +162,8 @@ function sendData() {
                     console.log(error);
                 });
             }
+
+            terminouXHRTitular = true;
         }
     };
     
