@@ -136,7 +136,7 @@ function sendData() {
     // resultadoApiCalls
     xhr.onload = function() {
         if (xhr.status != 200) { // analyze HTTP status of the response
-            resultadoApiCalls = resultadoApiCalls + "Titular: Erro ao cadastrar Titular \n";
+            resultadoApiCalls = resultadoApiCalls + "Titular: Erro ao cadastrar Titular ->"+ xhr.statusText +"\n";
             numeroApiCalls = numeroApiCalls -1;
             terminouXHRTitular = true;
         } else { // show the result
@@ -224,7 +224,7 @@ function sendData() {
         
         xhr2.onload = function() {
             if (xhr2.status != 200) { // analyze HTTP status of the response
-                resultadoApiCalls = resultadoApiCalls + "Dependente 1: Erro ao cadastrar dependente 1 \n";
+                resultadoApiCalls = resultadoApiCalls + "Dependente 1: Erro ao cadastrar dependente 1 -> "+ xhr2.statusText +" \n";
                 numeroApiCalls = numeroApiCalls -1;
             } else { // show the result
                 resultadoApiCalls = resultadoApiCalls + "Dependente 1: Cadastrado \n";
@@ -290,7 +290,7 @@ function sendData() {
         
         xhr3.onload = function() {
             if (xhr3.status != 200) { // analyze HTTP status of the response
-                resultadoApiCalls = resultadoApiCalls + "Dependente 2: Erro ao cadastrar dependente 2 \n"
+                resultadoApiCalls = resultadoApiCalls + "Dependente 2: Erro ao cadastrar dependente 2 ->" + xhr3.statusText +" \n"
                 numeroApiCalls = numeroApiCalls -1;
             } else { // show the result
                 resultadoApiCalls = resultadoApiCalls + "Dependente 2: Cadastrado \n"
@@ -352,7 +352,7 @@ function sendData() {
         
         xhr4.onload = function() {
             if (xhr4.status != 200) { // analyze HTTP status of the response
-                resultadoApiCalls = resultadoApiCalls + "Dependente 3: Erro ao cadastrar dependente 3 \n";
+                resultadoApiCalls = resultadoApiCalls + "Dependente 3: Erro ao cadastrar dependente 3 -> " + xhr4.statusText +" \n";
                 numeroApiCalls = numeroApiCalls -1;
             } else { // show the result
                 resultadoApiCalls = resultadoApiCalls + "Dependente 3: Cadastrado \n"
