@@ -89,7 +89,7 @@ function sendData() {
     var Sexo = document.forms["my-form"]["sex_titular"].value;
     var IdentificacaoPessoa = document.forms["my-form"]["cpfcnpj"].value;
     // var Produtos = document.forms["my-form"]["product"].value;
-    var Produtos = "18";
+    var Produtos = "19";
     
     var cpfCorreto = checkCPF(IdentificacaoPessoa);
     cpfTitularParaVerificacaoCPF = IdentificacaoPessoa;
