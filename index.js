@@ -116,16 +116,16 @@ function sendData() {
 
     // TESTES
     // var xhr = new XMLHttpRequest();
-    // xhr.open('POST', 'https://cors-anywhere.herokuapp.com/http://lifemanager.nextplus.com.br:9095/lifemanagerapihomologacao/lmapi/cadastro', true);
+    // xhr.open('POST', 'https://thingproxy.freeboard.io/fetch/http://lifemanager.nextplus.com.br:9095/lifemanagerapihomologacao/lmapi/cadastro', true);
     // xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
     // xhr.setRequestHeader('Authorization', 'Bearer ' + 'LEKuQBkDmKbtnBsCbQq70wRClD1MMLAmn3GRs5NLWA-FgUecs0ScGf3ebrMtmj28nRNAVI5JneiR4zNPwqZJqRPpXwA1cFyDFMbAR4dhU0vj5A3Obr2cqWGeEkMBmAmFThgJhDKlo1TVNlys7aH8l76kSMWML2p5u48Td2gAqXdXW5epZ30q4IruHooH5QELxfXp61lSxs2TtT4-29k9fxJjHtHgKHEPuu8CT6rH4-q5AdauqZpt3PeomTUvMGPNzLWMFM1T7-GyOE_qXtj3oqWwfjFwSo6iTP6l_IJNhfwt2o6V3CBqpzdaCPYlsYnm');
     // xhr.send(jsonString);
 
 
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://cors-anywhere.herokuapp.com/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
+    xhr.open('POST', 'https://thingproxy.freeboard.io/fetch/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-    xhr.setRequestHeader('Authorization', 'Bearer ' + '0jWcfyw8HVbconen-hO_YNltPRWPrSm9owXmuSi5bcukcJZ5Y9qWvFVtn1ISiyCvh_o_m4axvyNNZUJ8jrXEjaP3nS1ripvNMHXLxkbus_t_Ngf3DKEv_KDuUOMxW-MGUUb1OKCptlOKuLhhKLhhBi0gQcrJa0Kmx15TDwg7p5uLrhy4p48Cw4Gia_OZQuMs1HTksihM_hP9qACKp2Q5WjperWrrRYylpY_oLbESAVKzXIGvO1kuJxfUUmmWkhdLsKJ_qAHvBE_gfNLPPCth38hQt1ViOxnY7dsRsITjz1FdgCdl5nR7-6xLiN1L0AwH');
+    xhr.setRequestHeader('Authorization', 'Bearer ' + '4_QBZCrrHPViIApVTWsbNe3mE6nz8jbXZ-EwtzGfCgD1uxHqGDo6hlrnpwoWYLCR7pNuCYJm6zLAHSc3bpBKCO7MMINVydUVBsvzNKytEdwaAQvRtHW8BbgKqiS7nttqVTIdezitdMCkpc0oRtXuBppxbc-lti2TSyNagb5qa4FD7hQ0y6v8PE_USCt1dxC9bBklQKPy313CPj9aMLJOqqX9FBeszTM9yjnTbDhssFlF2dwswPxv7voPtRUf23ecjRRo2v6zTg2YeC6Veo8kA78e_VJf_13jABZOj9lmZmHcWGrGf4PQndT9qZl6irXh');
     xhr.send(jsonString);
 
     let terminouXHRTitular = false;
@@ -218,9 +218,9 @@ function sendData() {
         var jsonString2 = JSON.stringify(apiObject2, undefined, 2);
 
         var xhr2 = new XMLHttpRequest();
-        xhr2.open('POST', 'https://cors-anywhere.herokuapp.com/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
+        xhr2.open('POST', 'https://thingproxy.freeboard.io/fetch/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
         xhr2.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-        xhr2.setRequestHeader('Authorization', 'Bearer ' + '0jWcfyw8HVbconen-hO_YNltPRWPrSm9owXmuSi5bcukcJZ5Y9qWvFVtn1ISiyCvh_o_m4axvyNNZUJ8jrXEjaP3nS1ripvNMHXLxkbus_t_Ngf3DKEv_KDuUOMxW-MGUUb1OKCptlOKuLhhKLhhBi0gQcrJa0Kmx15TDwg7p5uLrhy4p48Cw4Gia_OZQuMs1HTksihM_hP9qACKp2Q5WjperWrrRYylpY_oLbESAVKzXIGvO1kuJxfUUmmWkhdLsKJ_qAHvBE_gfNLPPCth38hQt1ViOxnY7dsRsITjz1FdgCdl5nR7-6xLiN1L0AwH');
+        xhr2.setRequestHeader('Authorization', 'Bearer ' + '4_QBZCrrHPViIApVTWsbNe3mE6nz8jbXZ-EwtzGfCgD1uxHqGDo6hlrnpwoWYLCR7pNuCYJm6zLAHSc3bpBKCO7MMINVydUVBsvzNKytEdwaAQvRtHW8BbgKqiS7nttqVTIdezitdMCkpc0oRtXuBppxbc-lti2TSyNagb5qa4FD7hQ0y6v8PE_USCt1dxC9bBklQKPy313CPj9aMLJOqqX9FBeszTM9yjnTbDhssFlF2dwswPxv7voPtRUf23ecjRRo2v6zTg2YeC6Veo8kA78e_VJf_13jABZOj9lmZmHcWGrGf4PQndT9qZl6irXh');
         xhr2.send(jsonString2);
         
         xhr2.onload = function() {
@@ -284,9 +284,9 @@ function sendData() {
         var jsonString3 = JSON.stringify(apiObject3, undefined, 2);
 
         var xhr3 = new XMLHttpRequest();
-        xhr3.open('POST', 'https://cors-anywhere.herokuapp.com/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
+        xhr3.open('POST', 'https://thingproxy.freeboard.io/fetch/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
         xhr3.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-        xhr3.setRequestHeader('Authorization', 'Bearer ' + '0jWcfyw8HVbconen-hO_YNltPRWPrSm9owXmuSi5bcukcJZ5Y9qWvFVtn1ISiyCvh_o_m4axvyNNZUJ8jrXEjaP3nS1ripvNMHXLxkbus_t_Ngf3DKEv_KDuUOMxW-MGUUb1OKCptlOKuLhhKLhhBi0gQcrJa0Kmx15TDwg7p5uLrhy4p48Cw4Gia_OZQuMs1HTksihM_hP9qACKp2Q5WjperWrrRYylpY_oLbESAVKzXIGvO1kuJxfUUmmWkhdLsKJ_qAHvBE_gfNLPPCth38hQt1ViOxnY7dsRsITjz1FdgCdl5nR7-6xLiN1L0AwH');
+        xhr3.setRequestHeader('Authorization', 'Bearer ' + '4_QBZCrrHPViIApVTWsbNe3mE6nz8jbXZ-EwtzGfCgD1uxHqGDo6hlrnpwoWYLCR7pNuCYJm6zLAHSc3bpBKCO7MMINVydUVBsvzNKytEdwaAQvRtHW8BbgKqiS7nttqVTIdezitdMCkpc0oRtXuBppxbc-lti2TSyNagb5qa4FD7hQ0y6v8PE_USCt1dxC9bBklQKPy313CPj9aMLJOqqX9FBeszTM9yjnTbDhssFlF2dwswPxv7voPtRUf23ecjRRo2v6zTg2YeC6Veo8kA78e_VJf_13jABZOj9lmZmHcWGrGf4PQndT9qZl6irXh');
         xhr3.send(jsonString3);
         
         xhr3.onload = function() {
@@ -346,9 +346,9 @@ function sendData() {
         var jsonString4 = JSON.stringify(apiObject4, undefined, 2);
 
         var xhr4 = new XMLHttpRequest();
-        xhr4.open('POST', 'https://cors-anywhere.herokuapp.com/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
+        xhr4.open('POST', 'https://thingproxy.freeboard.io/fetch/http://lifemanager.nextplus.com.br:9095/lifemanagerapi/lmapi/cadastro', true);
         xhr4.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-        xhr4.setRequestHeader('Authorization', 'Bearer ' + '0jWcfyw8HVbconen-hO_YNltPRWPrSm9owXmuSi5bcukcJZ5Y9qWvFVtn1ISiyCvh_o_m4axvyNNZUJ8jrXEjaP3nS1ripvNMHXLxkbus_t_Ngf3DKEv_KDuUOMxW-MGUUb1OKCptlOKuLhhKLhhBi0gQcrJa0Kmx15TDwg7p5uLrhy4p48Cw4Gia_OZQuMs1HTksihM_hP9qACKp2Q5WjperWrrRYylpY_oLbESAVKzXIGvO1kuJxfUUmmWkhdLsKJ_qAHvBE_gfNLPPCth38hQt1ViOxnY7dsRsITjz1FdgCdl5nR7-6xLiN1L0AwH');
+        xhr4.setRequestHeader('Authorization', 'Bearer ' + '4_QBZCrrHPViIApVTWsbNe3mE6nz8jbXZ-EwtzGfCgD1uxHqGDo6hlrnpwoWYLCR7pNuCYJm6zLAHSc3bpBKCO7MMINVydUVBsvzNKytEdwaAQvRtHW8BbgKqiS7nttqVTIdezitdMCkpc0oRtXuBppxbc-lti2TSyNagb5qa4FD7hQ0y6v8PE_USCt1dxC9bBklQKPy313CPj9aMLJOqqX9FBeszTM9yjnTbDhssFlF2dwswPxv7voPtRUf23ecjRRo2v6zTg2YeC6Veo8kA78e_VJf_13jABZOj9lmZmHcWGrGf4PQndT9qZl6irXh');
         xhr4.send(jsonString4);
         
         xhr4.onload = function() {
@@ -429,7 +429,7 @@ function sendData() {
     // xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     // xhr.send(test);
 
-    // const url = "https://cors-anywhere.herokuapp.com/http://lifemanager.nextplus.com.br:9095/lifemanagerapihomologacao/lmapi/token";
+    // const url = "https://thingproxy.freeboard.io/fetch/http://lifemanager.nextplus.com.br:9095/lifemanagerapihomologacao/lmapi/token";
     // fetch(url, {
     //     headers: {
     //         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -445,9 +445,9 @@ function sendData() {
     // );
 
     // var xhr = new XMLHttpRequest();
-    // xhr.open('POST', 'https://cors-anywhere.herokuapp.com/http://lifemanager.nextplus.com.br:9095/lifemanagerapihomologacao/lmapi/cadastro', true);
+    // xhr.open('POST', 'https://thingproxy.freeboard.io/fetch/http://lifemanager.nextplus.com.br:9095/lifemanagerapihomologacao/lmapi/cadastro', true);
     // xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-    // xhr.setRequestHeader('Authorization', 'Bearer ' + '0jWcfyw8HVbconen-hO_YNltPRWPrSm9owXmuSi5bcukcJZ5Y9qWvFVtn1ISiyCvh_o_m4axvyNNZUJ8jrXEjaP3nS1ripvNMHXLxkbus_t_Ngf3DKEv_KDuUOMxW-MGUUb1OKCptlOKuLhhKLhhBi0gQcrJa0Kmx15TDwg7p5uLrhy4p48Cw4Gia_OZQuMs1HTksihM_hP9qACKp2Q5WjperWrrRYylpY_oLbESAVKzXIGvO1kuJxfUUmmWkhdLsKJ_qAHvBE_gfNLPPCth38hQt1ViOxnY7dsRsITjz1FdgCdl5nR7-6xLiN1L0AwH');
+    // xhr.setRequestHeader('Authorization', 'Bearer ' + '4_QBZCrrHPViIApVTWsbNe3mE6nz8jbXZ-EwtzGfCgD1uxHqGDo6hlrnpwoWYLCR7pNuCYJm6zLAHSc3bpBKCO7MMINVydUVBsvzNKytEdwaAQvRtHW8BbgKqiS7nttqVTIdezitdMCkpc0oRtXuBppxbc-lti2TSyNagb5qa4FD7hQ0y6v8PE_USCt1dxC9bBklQKPy313CPj9aMLJOqqX9FBeszTM9yjnTbDhssFlF2dwswPxv7voPtRUf23ecjRRo2v6zTg2YeC6Veo8kA78e_VJf_13jABZOj9lmZmHcWGrGf4PQndT9qZl6irXh');
     // xhr.send(jsonString);
     // alert("Cadastro realizado");
 
